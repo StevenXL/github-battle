@@ -1,4 +1,4 @@
-let styles = {
+var styles = {
   transparentBg: {
     background: 'transparent'
   }
