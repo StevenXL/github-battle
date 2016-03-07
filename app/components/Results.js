@@ -9,8 +9,8 @@ function Results(props) {
 
 Results.propTypes = {
   isLoading: PropTypes.bool.isRequired,
-  playersInfo: Proptypes.array.isRequired,
-  scores: Proptypes.array.isRequired
+  playersInfo: PropTypes.array.isRequired,
+  scores: PropTypes.array.isRequired
 };
 
 module.exports = Results;

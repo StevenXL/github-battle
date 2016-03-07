@@ -20,7 +20,7 @@ function getTotalStars(repos) {
 
 function getPlayersData(player) {
   return
-    getRepos(user.login)
+    getRepos(player.login)
       .then(getTotalStars)
       .then(function(totalStars) {
         return ({
