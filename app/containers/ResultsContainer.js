@@ -7,11 +7,10 @@ var ResultsContainer = React.createClass({
     var playersInfo = this.props.location.state.playersInfo;
     var that = this;
 
-    debugger;
     githubHelpers.battle(playersInfo)
       .then(function(scores) {
         that.setState({
-          scores: [],
+          scores: scores,
           isLoading: false
         });
       });

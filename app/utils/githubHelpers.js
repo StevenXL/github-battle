@@ -19,15 +19,12 @@ function getTotalStars(repos) {
 }
 
 function getPlayersData(player) {
-  return
-    getRepos(player.login)
-      .then(getTotalStars)
-      .then(function(totalStars) {
-        return ({
-          followers: player.followers,
-          totalStars: totalStars
-        });
-      });
+  return getRepos(player.login).then(getTotalStars).then(function(totalStars) {
+    return {
+      followers: player.followers,
+      totalStars: totalStars
+    };
+  });
 }
 
 function calculateScores(players) {
